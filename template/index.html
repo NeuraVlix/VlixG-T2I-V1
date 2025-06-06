@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbit Vlix - Text to Image</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Orbit Vlix (VlixG V1)</h1>
+        <p>Text-to-Image Generation System</p>
+        
+        <div class="input-area">
+            <textarea id="prompt" placeholder="Describe the image you want to generate..."></textarea>
+            <button id="generate-btn">Generate Image</button>
+        </div>
+        
+        <div class="result-area">
+            <h2>Generated Image</h2>
+            <div class="image-container">
+                <img id="generated-image" alt="Generated image will appear here">
+            </div>
+            <div class="loading" id="loading-indicator">
+                <div class="spinner"></div>
+                <p>Generating...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
